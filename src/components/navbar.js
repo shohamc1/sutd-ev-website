@@ -31,36 +31,36 @@ const NavBar = () => {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end`}
       >
         <div>
-          <a
-            href="#"
+          <Link
+            to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             About
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Vision
-          </a>
+          </Link>
           <Link
             to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Projects
           </Link>
-          <a
-            href="#"
+          <Link
+            to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Team
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
