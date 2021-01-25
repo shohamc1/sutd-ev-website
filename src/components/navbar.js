@@ -6,13 +6,13 @@ const NavBar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 font-body w-2/3">
+    <nav className="flex items-center justify-between flex-wrap p-6 font-body w-full lg:w-2/3">
       <div className="flex items-center flex-shrink-0 mr-6">
-        <h1>Hello</h1>
+        <img class="block h-10 w-auto" src={SUTDLogo} alt="Workflow" />
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 border rounded-full"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -33,25 +33,31 @@ const NavBar = () => {
         <div>
           <a
             href="#"
-            className="inline-block text-header mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-200"
+            className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Home
           </a>
           <a
             href="#"
-            className="inline-block text-header mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-200"
+            className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             About
           </a>
           <a
             href="#"
-            className="inline-block text-header mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-200"
+            className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Vision
           </a>
+          <Link
+            to="#"
+            className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
+          >
+            Projects
+          </Link>
           <a
             href="#"
-            className="inline-block text-header mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-200"
+            className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Team
           </a>
