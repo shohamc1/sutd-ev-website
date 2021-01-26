@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 import SUTDLogo from "../assets/images/sutd.png";
 
 const NavBar = () => {
   const [isExpanded, toggleExpansion] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 font-body w-full lg:w-2/3">
+    <nav
+      className="flex items-center justify-between flex-wrap p-6 font-body w-full lg:w-2/3"
+      id="nav"
+    >
       <div className="flex items-center flex-shrink-0 mr-6">
         <img class="block h-10 w-auto" src={SUTDLogo} alt="Workflow" />
       </div>
       <div className="block lg:hidden">
         <button
-          className="flex items-center px-3 py-2 border rounded-full"
+          className="flex items-center "
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
@@ -31,30 +35,30 @@ const NavBar = () => {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end`}
       >
         <div>
-          <Link
-            to="#"
+          <button
+            onClick={() => scrollTo("#home")}
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Home
-          </Link>
-          <Link
-            to="#"
+          </button>
+          <button
+            onClick={() => scrollTo("#about")}
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             About
-          </Link>
-          <Link
-            to="#"
+          </button>
+          <button
+            onClick={() => scrollTo("#vision")}
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Vision
-          </Link>
-          <Link
-            to="#"
+          </button>
+          <button
+            onClick={() => scrollTo("#projects")}
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
           >
             Projects
-          </Link>
+          </button>
           <Link
             to="#"
             className="inline-block text-header font-medium mx-4 px-4 py-2 leading-none mt-4 lg:mt-0 hover:text-blue-nav transition duration-300"
