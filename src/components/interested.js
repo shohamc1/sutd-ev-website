@@ -3,8 +3,8 @@ import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Interested = () => {
   return (
-    <div class="font-body py-16 w-full bg-blue-focus">
-      <div class="flex w-2/3 mx-auto">
+    <div class="font-body py-16 px-4 w-full bg-blue-focus">
+      <div class="flex flex-col lg:flex-row lg:w-2/3 mx-auto">
         <div class="flex flex-col w-1/2">
           <h2
             class="font-bold text-white-focus mb-4"
